@@ -2,9 +2,6 @@
     background: #666;
     padding: 20px;
     width: 146px;
-    -webkit-border-radius:6px;
-    -moz-border-radius-:6px;
-    border-radius:6px;
     margin: 20px auto;
 }
 #screen {
@@ -14,12 +11,24 @@
     font-size: 2em;
     line-height: 2em;
     text-align: right;
-    -webkit-border-radius:6px;
-    -moz-border-radius-:6px;
-    border-radius:6px;
     margin: 0 0 10px;
     padding: 10px 2px;
     border: 1px solid black;
+}
+.content-area{
+    position: relative;
+}
+.history-value {
+    position: absolute;
+    top: -10px;
+    right: 5px;
+    color: #ccc;
+}
+.button,
+.border-radius {
+    -webkit-border-radius:6px;
+    -moz-border-radius-:6px;
+    border-radius:6px;
 }
 .button.function {
     -moz-box-shadow:inset 0px 1px 0px 0px #c1ed9c;
@@ -49,7 +58,7 @@
     height: 0px;
     margin: 2px;
     padding: 20px;
-    text-align: centre;
+    text-align: center;
     -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
     -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
     box-shadow:inset 0px 1px 0px 0px #ffffff;
@@ -57,9 +66,6 @@
     background:-moz-linear-gradient(center top, #ededed 5%, #dfdfdf 100%);
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
     background-color:#ededed;
-    -webkit-border-radius:6px;
-    -moz-border-radius-:6px;
-    border-radius:6px;
     text-indent:0;
     border:1px solid #dcdcdc;
     display:inline-block;

@@ -4,12 +4,15 @@
 	<meta charset="UTF-8">
 	<title>Hammy's Calculator</title>
 	<link rel="stylesheet" href="styles.css">
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script src="init-bv.js"></script>
 </head>
 <body>
-	<div id="calculator" class="calculator">
-	    <input type="text" id="screen" />
+	<div id="calculator" class="calculator border-radius">
+		<div class="content-area">
+	    	<input type="text" id="screen" class="border-radius"/>
+	    	<p id="history" class="history-value"></p>
+		</div>
 	    <section id="keypad">	
 		    <a id="one" class="button">1</a>
 			<a id="two" class="button">2</a>
@@ -26,8 +29,8 @@
 			<a id="subtract" class="button function">-</a>
 			<a id="divide" class="button function">/</a>
 			<a id="multiply" class="button function">x</a>
-			<a id="clear" class="button function">C</a>
-			<a id="equals" class="button function">=</a> 
+			<a id="clear" class="button function special">C</a>
+			<a id="equals" class="button function special">=</a> 
 	    </section>
 	</div>
 </body>

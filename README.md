@@ -1,4 +1,5 @@
-calculator
+Js Calculator
 ==========
 
-calculator made on javascript
+Calculator made using javascript
+A self initiated project to learn more about javascript
