@@ -1,4 +1,5 @@
-$(function() {
+"use strict";
+$(document).ready(function() {
 	var keypad = $('#keypad');
 	var displayElement = $('#screen');
 	var display = '';
@@ -14,7 +15,7 @@ $(function() {
 			clear();
 		}
 	});
-	
+
 
 	function calculate(display) {
 		var array = display.split("+");
@@ -28,7 +29,7 @@ $(function() {
 
 		for(var i=0; i < array.length; i++) {
 			total += parseInt(array[i]);
-		}	
+		}
 		return total;
 	}
 
@@ -43,8 +44,8 @@ $(function() {
         workSize();
         if (e.which < 48 || e.which > 57) return false;
     });
-    
-    // calculate font size depending on how many characters are on the screen  
+
+    // calculate font size depending on how many characters are on the screen
     function workSize() {
 	    var characters = displayElement.val().length,
 	        textSize = 13 / characters;
@@ -59,5 +60,5 @@ $(function() {
 		display = '';
 		displayElement.val('').css({'fontSize': '2em'});
 	}
-}); 
-
+	
+});

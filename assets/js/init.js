@@ -100,6 +100,9 @@ function vari() {
         if (e.which < 48 || e.which > 57) return false;
     });
 }
+$(document).ready(function() {
+
 init();
 vari();
+});
 //Math.sqrt(9);
